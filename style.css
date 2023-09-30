@@ -1,14 +1,15 @@
+* {
+  box-sizing: border-box;
+}
 header {
   background-color: red;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 18px;
+  margin: 28px;
 }
-
 h2 {
   background-color: yellow;
-  margin: 16px;
 }
 ul {
   display: flex;
@@ -28,4 +29,40 @@ li {
 }
 span {
   font-size: 18px;
+  color: black;
+}
+span:hover {
+  background-color: rgb(236, 186, 121);
+}
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.main {
+  /* background-color: yellow; */
+  margin: 28px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 93.5vw;
+  display: grid;
+  grid-template-columns: 500px, 500px;
+  row-gap: 35px;
+  column-gap: 40px;
+}
+.pic {
+  margin-right: 30px;
+  background-color: blue;
+  height: 50vh;
+  width: 42.5vw;
+  object-fit: cover;
+  object-position: center;
+}
+.pic:hover {
+  opacity: 40%;
+
+  color: rgb(235, 179, 106);
+}
+.detailpic {
+  width: 100%;
 }
