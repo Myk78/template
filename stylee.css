@@ -2,14 +2,16 @@
   box-sizing: border-box;
 }
 header {
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 28px;
 }
-h2 {
-  background-color: yellow;
+h2 a {
+  text-decoration: none;
+  color: black;
+  /* background-color: yellow; */
 }
 ul {
   display: flex;
@@ -31,6 +33,9 @@ span {
   font-size: 18px;
   color: black;
 }
+span:hover {
+  background-color: rgb(236, 186, 121);
+}
 .detailpic {
   margin-left: 26px;
   width: 93vw;
@@ -39,10 +44,61 @@ span {
 p {
   font-size: 16px;
   margin-left: 26px;
+  margin-bottom: 3rem;
+  font-size: 16px;
 }
 .p1 {
   margin-bottom: 25px;
 }
 p b {
   font-size: 24px;
+}
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.otherpic {
+  display: flex;
+  flex-direction: column;
+}
+.main2 {
+  margin-left: 28px;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+img {
+  width: 45vw;
+  height: 100vh;
+}
+#img {
+  margin-right: 30px;
+}
+.bigimg {
+  width: 93vw;
+  height: 100vh;
+  margin-top: 20px;
+  margin-left: 28px;
+}
+@media only screen and (max-width: 1180px) {
+  .main2 {
+    margin-left: 18px;
+    margin-right: 15px;
+    margin-top: 20px;
+  }
+  #img {
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 730px) {
+  img {
+    width: 75vw;
+    height: 30vh;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .detailpic {
+    margin-left: 10px;
+    width: 70vw;
+    height: 35vh;
+  }
 }
