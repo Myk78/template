@@ -36,7 +36,7 @@ span {
   color: black;
 }
 span:hover {
-  background-color: rgb(236, 186, 121);
+  background-color: rgba(240, 217, 155, 0.568);
 }
 body {
   min-height: 100vh;
@@ -53,6 +53,7 @@ body {
   grid-template-columns: 500px, 500px;
   row-gap: 35px;
   column-gap: 40px;
+  /* transition: margin-right 1s ease-out; */
 }
 .pic {
   margin-right: 30px;
